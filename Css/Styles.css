@@ -1,0 +1,84 @@
+/* Thiết lập margin và padding cho body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Sử dụng font chữ Arial hoặc font sans-serif mặc định */
+}
+
+/* Thiết lập vị trí tuyệt đối cho bản đồ */
+#map {
+    position: absolute;
+    top: 55px;
+    bottom: 0;
+    width: 100%;
+    border-radius: 15px; /* Bo tròn các góc của bản đồ */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
+
+/* Thiết lập vị trí, kích thước và kiểu dáng cho trường nhập tìm kiếm */
+#searchInput {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 350px; /* Điều chỉnh chiều rộng của ô tìm kiếm */
+    padding: 10px;
+    z-index: 1;
+    border-radius: 5px; /* Bo tròn các góc của ô tìm kiếm */
+    background-color: #f7f1f1; /* Màu nền */
+    border: 1px solid #ccc; /* Viền */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
+
+/* Thiết lập vị trí và kiểu dáng cho nút 'vị trí hiện tại' */
+#currentLocation {
+    position: absolute;
+    top: 10px; /* Đặt cùng hàng với ô tìm kiếm */
+    left: 400px; /* Đặt nút 'vị trí hiện tại' ngay bên phải của ô tìm kiếm */
+    background: #ffffff; /* Màu nền */
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px; /* Bo tròn các góc của nút 'vị trí hiện tại' */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
+
+/* Thiết lập vị trí, kích thước và kiểu dáng cho danh sách gợi ý */
+#suggestionList {
+    position: absolute;
+    top: 48px; /* Đặt vị trí của danh sách gợi ý cao hơn */
+    left: 10px;
+    background: #ffffff; /* Màu nền */
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 380px;
+    display: none;
+    z-index: 1;
+    border-radius: 5px; /* Bo tròn các góc của danh sách gợi ý */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
+
+/* Thiết lập kiểu dáng cho mỗi mục trong danh sách gợi ý */
+#suggestionList div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Thiết lập kiểu dáng khi rê chuột qua một mục trong danh sách gợi ý */
+#suggestionList div:hover {
+    background: #f0f0f0; /* Hiệu ứng màu sắc khi di chuột qua */
+}
+
+/* Thiết lập vị trí, kích thước và kiểu dáng cho kết quả tìm kiếm */
+#result {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    padding: 10px;
+ 
+    z-index: 1;
+    border-radius: 5px; /* Bo tròn các góc của kết quả tìm kiếm */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
